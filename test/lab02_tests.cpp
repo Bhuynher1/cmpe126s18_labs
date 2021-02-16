@@ -74,7 +74,8 @@ TEST_F(Lab02Fixture, stringVector_append_crash_test){
 }
 
 
-TEST_F(Lab02Fixture, sorting_Words_test_student) {
+/*
+ * TEST_F(Lab02Fixture, sorting_Words_test_student) {
     container1 = new lab2::stringVector();
     container1->append(“apple”);
     container1->append(“Carousel”);
@@ -88,7 +89,7 @@ TEST_F(Lab02Fixture, sorting_Words_test_student) {
     EXPECT_EQ(“Apple”,container1->operator[](3));
     EXPECT_EQ(“Carousel”,container1->operator[](4));
 }
-
+*/
 
 TEST_F(Lab02Fixture, stringVector_append_access_test) {
     container1 = new lab2::stringVector();

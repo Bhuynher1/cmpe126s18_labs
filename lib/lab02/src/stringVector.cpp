@@ -10,8 +10,6 @@ namespace lab2 {
     stringVector::~stringVector() {
         delete[] data;
         data = nullptr;
-
-
     }
 
     unsigned stringVector::size() const{
@@ -23,42 +21,90 @@ namespace lab2 {
     }
 
     void stringVector::reserve(unsigned new_size) {
+        std::string *temp = new std::string[new_size];
+        for (int i = 0; i < new_size; i++) {
+            if (i < length) {
+                temp[i] = data[i];
+            }
+            else {
+                break;
+            }
+        }
 
-        unsigned array1[new_size];
-    //create new array that fills up to given size and doesnt take more than the given allocated size
+        delete []data;
+        data = temp;
+        allocated_length = new_size;
+
+        if (length > new_size) {
+            length = new_size;
+        }
     }
 
     bool stringVector::empty() const{
-       if (array1 )
+       return (length == 0);
     }
 
     void stringVector::append(std::string new_data) {
-//case 1: array is empty;
-//size: 5 capacity: 6;
-//size: 6 capacity: 10;
+    std::string *temp = NULL;
 
-//make new array with doubled capacity;
-//copy data over to new array;
-//change the pointer to point to the new array;
+    if (length == allocated_length) {
+        data = new std::string[10];
+        allocated_length = 10;
+    }
+    else {
+        temp = new std::string[2 * allocated_length];
+        for (int i = 0;i < length; i++) {
+            temp[i] = data[i];
+        }
+        allocated_length = 2 * allocated_length;
+
+        if (data != NULL) {
+            delete []data;
+            data = temp;
+        }
+    }
+
+    data[length] = new_data;
+    length++;
     }
 
     void stringVector::swap(unsigned pos1, unsigned pos2) {
-        unsigned temp;
-        temp = pos2;
-        pos2 = pos1;
-        pos1 = temp;
+        std::string string1;
+        if ((pos1 >= length) || (pos2 >= length))
+            return;
 
+        string1 = data[pos1];
+        data[pos1] = data[pos2];
+        data[pos2] = string1;
     }
 
     stringVector &stringVector::operator=(stringVector const &rhs) {
-        //return ;
+        delete []data;
+        length = rhs.length;
+        allocated_length = rhs.allocated_length;
+
+        this->data = new std::string[allocated_length];
+
+        for (int i = 0; i < length; i++) {
+            this -> data[i] = rhs.data[i];
+        }
     }
 
     std::string &stringVector::operator[](unsigned position) {
-        //return ;
+        return data[position - 1];
     }
 
     void stringVector::sort() {
+        std::string string1;
 
+        for (int i = (length - 1); i < 0; i--) {
+            for (int j = 0; i > 0; i--) {
+                if (data[j].compare(data[j + 1]) > 0) {
+                    string1 = data[j];
+                    data[j] = data[j + 1];
+                    data[j + 1] = string1;
+                }
+            }
+        }
     }
 }
