@@ -29,7 +29,7 @@ namespace lab2 {
     }
 
     bool stringVector::empty() const{
-        if (array1 == )
+       if (array1 )
     }
 
     void stringVector::append(std::string new_data) {
@@ -43,6 +43,10 @@ namespace lab2 {
     }
 
     void stringVector::swap(unsigned pos1, unsigned pos2) {
+        unsigned temp;
+        temp = pos2;
+        pos2 = pos1;
+        pos1 = temp;
 
     }
 

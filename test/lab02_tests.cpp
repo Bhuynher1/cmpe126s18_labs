@@ -49,6 +49,7 @@ TEST_F(Lab02Fixture, basic_reserve_capacity_test) {
     EXPECT_TRUE(container1->empty());
 }
 
+
 TEST_F(Lab02Fixture, stringVector_append_crash_test){
     container1 = new lab2::stringVector();
 
@@ -70,6 +71,22 @@ TEST_F(Lab02Fixture, stringVector_append_crash_test){
     container1->append("some other other other string");
     EXPECT_FALSE(container1->empty());
     EXPECT_EQ(4,container1->size());
+}
+
+
+TEST_F(Lab02Fixture, sorting_Words_test_student) {
+    container1 = new lab2::stringVector();
+    container1->append(“apple”);
+    container1->append(“Carousel”);
+    container1->append(“car”);
+    container1->append(“Apple”);
+    container1->append(“cars”);
+    container1->sort();
+    EXPECT_EQ(“apple”,container1->operator[](0));
+    EXPECT_EQ(“car”,container1->operator[](1));
+    EXPECT_EQ(“cars”,container1->operator[](2));
+    EXPECT_EQ(“Apple”,container1->operator[](3));
+    EXPECT_EQ(“Carousel”,container1->operator[](4));
 }
 
 
