@@ -86,7 +86,7 @@ TEST_F(Lab01Fixture, multiDigitNextToken) {
     stream1 = new lab1::expressionstream("111+222+5555");
     stream2 = new lab1::expressionstream("265   + 987 *661+(109*345)");
     stream3 = new lab1::expressionstream("-841 +-6987");
-    stream4 = new lab1::expressionstream("-826-(-12-(6--7594)-98456)--99");
+    stream4 = new lab1::expressionstream("-826-(-12-(6--7594)-98456)--77");
 
     //111+222+5555
     EXPECT_EQ("111", stream1->get_next_token());
@@ -114,7 +114,7 @@ TEST_F(Lab01Fixture, multiDigitNextToken) {
     EXPECT_EQ("+", stream3->get_next_token());
     EXPECT_EQ("-6987", stream3->get_next_token());
 
-    //-826-(-12-(6--7594)-98456)--99
+    //-826-(-12-(6--7594)-98456)--77
     EXPECT_EQ("-826", stream4->get_next_token());
     EXPECT_EQ("-", stream4->get_next_token());
     EXPECT_EQ("(", stream4->get_next_token());
@@ -129,7 +129,7 @@ TEST_F(Lab01Fixture, multiDigitNextToken) {
     EXPECT_EQ("98456", stream4->get_next_token());
     EXPECT_EQ(")", stream4->get_next_token());
     EXPECT_EQ("-", stream4->get_next_token());
-    EXPECT_EQ("-99", stream4->get_next_token());
+    EXPECT_EQ("-77", stream4->get_next_token());
 }
 
 TEST_F(Lab01Fixture, multiDigitCurrentToken) {

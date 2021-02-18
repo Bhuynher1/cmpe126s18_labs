@@ -23,8 +23,17 @@ namespace lab2 {
     }
 
     void stringVector::reserve(unsigned new_size) {
-        delete []data;
+        std::string *temp = new std::string[new_size];
 
+        for (int i = 0; i < new_size; i++) {
+            if (i < length) {
+                temp[i] = data[i];
+            }
+            else
+                break;
+        }
+        delete []data;
+        data = temp;
         allocated_length = new_size;
 
         if (length > new_size) {
@@ -38,24 +47,17 @@ namespace lab2 {
 
     void stringVector::append(std::string new_data)
     {
-
         if (length == allocated_length) {
             reserve(length + 1);
             allocated_length = length + 1;
         }
 
-        for (int i = 0; i <= length; i++) {
             data[length] = new_data;
             length++;
-        }
-
     }
 
     void stringVector::swap(unsigned pos1, unsigned pos2) {
         std::string string1;
-        if ((pos1 >= length) || (pos2 >= length)) {
-            return;
-        }
 
         string1 = data[pos1];
         data[pos1] = data[pos2];

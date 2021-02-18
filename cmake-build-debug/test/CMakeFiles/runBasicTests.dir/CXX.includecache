@@ -10,10 +10,6 @@
 string
 -
 
-../lib/lab02/inc/stringVector.h
-string
--
-
 ../test/gtest-1.7.0/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
 ../test/gtest-1.7.0/include/gtest/gtest/internal/gtest-death-test-internal.h
@@ -254,11 +250,9 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/lab02_tests.cpp
+/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/lab01_tests.cpp
 gtest/gtest.h
 /Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest/gtest.h
-stringVector.h
-/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/stringVector.h
 expressionstream.h
 /Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/expressionstream.h
 
