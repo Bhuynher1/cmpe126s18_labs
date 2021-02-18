@@ -74,23 +74,6 @@ TEST_F(Lab02Fixture, stringVector_append_crash_test){
 }
 
 
-/*
- * TEST_F(Lab02Fixture, sorting_Words_test_student) {
-    container1 = new lab2::stringVector();
-    container1->append(“apple”);
-    container1->append(“Carousel”);
-    container1->append(“car”);
-    container1->append(“Apple”);
-    container1->append(“cars”);
-    container1->sort();
-    EXPECT_EQ(“apple”,container1->operator[](0));
-    EXPECT_EQ(“car”,container1->operator[](1));
-    EXPECT_EQ(“cars”,container1->operator[](2));
-    EXPECT_EQ(“Apple”,container1->operator[](3));
-    EXPECT_EQ(“Carousel”,container1->operator[](4));
-}
-*/
-
 TEST_F(Lab02Fixture, stringVector_append_access_test) {
     container1 = new lab2::stringVector();
 
@@ -256,4 +239,21 @@ TEST_F(Lab02Fixture, stringVector_sort_access_test) {
     EXPECT_EQ("welcome",container1->operator[](24));
     EXPECT_EQ("xeon",container1->operator[](25));
     EXPECT_EQ("yellow",container1->operator[](26));
+}
+
+
+TEST_F(Lab02Fixture, sorting_Words_test_student) {
+    container1 = new lab2::stringVector();
+
+    container1->append("apple");
+    container1->append("Carousel");
+    container1->append("car");
+    container1->append("Apple");
+    container1->append("cars");
+    container1->sort();
+    EXPECT_EQ("apple",container1->operator[](0));
+    EXPECT_EQ("car",container1->operator[](1));
+    EXPECT_EQ("cars",container1->operator[](2));
+    EXPECT_EQ("Apples",container1->operator[](3));
+    EXPECT_EQ("Carousel",container1->operator[](4));
 }
