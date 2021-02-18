@@ -8,5 +8,6 @@ int main() {
     std::cout << "\n4th commit with slight additions";
     std::cout << "\n5th commit with most of each function filled out and now beginning to clear errors for tests";
     std::cout << "\n6th commit, more changes to append for errors";
+    std::cout << "\nlab 01 completion commit";
     return 0;
 }
