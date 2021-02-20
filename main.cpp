@@ -10,5 +10,6 @@ int main() {
     std::cout << "\n6th commit, more changes to append for errors";
     std::cout << "\nlab 01 completion commit";
     std::cout << "\n7th commit, reserve still causing errors";
+    std::cout << "\n8th commit, append access test failed";
     return 0;
 }
