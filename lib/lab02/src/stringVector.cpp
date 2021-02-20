@@ -1,5 +1,5 @@
 #include "../inc/stringVector.h"
-
+#include <iostream>
 #include <utility>
 
 namespace lab2 {
@@ -25,19 +25,22 @@ namespace lab2 {
     void stringVector::reserve(unsigned new_size) {
         std::string *temp = new std::string[new_size];
 
-        for (int i = 0; i < new_size; i++) {
-            if (i < length) {
-                temp[i] = data[i];
+        if (new_size > capacity()) {
+            for (int i = 0; i < allocated_length; i++) {
+                    temp[i] = data[i];
             }
-            else
-                break;
-        }
-        delete []data;
-        data = temp;
-        allocated_length = new_size;
+            delete []data;
+            data = temp;
 
-        if (length > new_size) {
+            allocated_length = new_size;
             length = new_size;
+        }
+        if (new_size < capacity()) {
+            for (int i = 0; i < new_size; i++) {
+                    temp[i] = data[i];
+            }
+            delete []data;
+            data = temp;
         }
     }
 
@@ -58,12 +61,16 @@ namespace lab2 {
 
     void stringVector::swap(unsigned pos1, unsigned pos2) {
         std::string string1;
+        if((pos1 > length) || (pos2 > length)){
+            std::cout << "Index is out of bounds" << std::endl;
+            return;
+        }
 
         string1 = data[pos1];
         data[pos1] = data[pos2];
         data[pos2] = string1;
     }
-
+//maybe error
     stringVector &stringVector::operator=(stringVector const &rhs) {
         if (this == &rhs) {
             return *this;
@@ -88,15 +95,10 @@ namespace lab2 {
     }
 
     void stringVector::sort() {
-        std::string string1;
-
-
-        for (int i = (length - 1); i > 0; i--) {
-            for (int j = 0; j < i; j++) {
-                if (data[j].compare(data[j + 1]) > 0) {
-                    string1 = data[j];
-                    data[j] = data[j + 1];
-                    data[j + 1] = string1;
+        for (int i = 0; i < length; i++) {
+            for (int j = i + 1;j < length; j++) {
+                if (data[j] > data[j + 1]) {
+                    swap (j, j + 1);
                 }
             }
         }
