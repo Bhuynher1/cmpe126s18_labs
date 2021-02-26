@@ -12,5 +12,6 @@ int main() {
     std::cout << "\n7th commit, reserve still causing errors";
     std::cout << "\n8th commit, append access test failed";
     std::cout << "\nlab02 submission complete with 8 out of 8 passes";
+    std::cout << "\nlab03 start with partial success, errors on size and is_empty";
     return 0;
 }

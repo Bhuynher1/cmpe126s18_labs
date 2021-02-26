@@ -51,7 +51,7 @@ namespace lab2 {
 
     void stringVector::swap(unsigned pos1, unsigned pos2) {
         std::string string1;
-        if((pos1 > length) || (pos2 > length)){
+        if((pos1 >= length) || (pos2 >= length)){
             std::cout << "Index is out of bounds" << std::endl;
             return;
         }
