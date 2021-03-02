@@ -14,6 +14,22 @@ string
 string
 -
 
+../lib/lab03/inc/fifo.h
+stringVector.h
+../lib/lab03/inc/stringVector.h
+
+../lib/lab03/inc/lifo.h
+stringVector.h
+../lib/lab03/inc/stringVector.h
+
+../lib/lab04/inc/calculator.h
+lifo.h
+../lib/lab04/inc/lifo.h
+fifo.h
+../lib/lab04/inc/fifo.h
+expressionstream.h
+../lib/lab04/inc/expressionstream.h
+
 ../test/gtest-1.7.0/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
 ../test/gtest-1.7.0/include/gtest/gtest/internal/gtest-death-test-internal.h
@@ -261,4 +277,20 @@ stringVector.h
 /Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/stringVector.h
 expressionstream.h
 /Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/expressionstream.h
+
+/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/lab03_tests.cpp
+gtest/gtest.h
+/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest/gtest.h
+fifo.h
+/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/fifo.h
+lifo.h
+/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/lifo.h
+
+/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/lab04_tests.cpp
+gtest/gtest.h
+/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest/gtest.h
+calculator.h
+/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/calculator.h
+sstream
+-
 

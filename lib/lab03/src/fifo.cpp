@@ -30,7 +30,6 @@ namespace lab3{
         fifo_storage = right.fifo_storage;
 
         return *this;
-        //return <#initializer#>;
     }
 
     bool fifo::is_empty(){
@@ -38,35 +37,26 @@ namespace lab3{
     }
 
     int fifo::size(){
-        return (fifo_storage.size());
+        return (back_index - front_index);
     }
 
     std::string fifo::top(){
         return fifo_storage[front_index];
-        //return std::__cxx11::string();
     }
 
     void fifo::enqueue(std::string input) {
-        if (fifo_storage.size() == back_index) {
-            return;
+        fifo_storage.append(input);
+        if (fifo_storage.capacity() <= back_index) {
+            fifo_storage.reserve(fifo_storage.capacity() + 1);
         }
-        else {
-                fifo_storage[back_index] = input;
-                back_index++;
-        }
-        return;
+        back_index++;
     }
 
     void fifo::dequeue() {
+        front_index++;
         if (front_index == back_index) {
-            return;
+            front_index = 0;
+            back_index = 0;
         }
-        else {
-            for (int i = 0; i < back_index - 1; i++) {
-                fifo_storage[i] = fifo_storage[i + 1];
-            }
-            back_index--;
-        }
-        return;
     }
 }
