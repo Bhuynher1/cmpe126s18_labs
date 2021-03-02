@@ -13,5 +13,6 @@ int main() {
     std::cout << "\n8th commit, append access test failed";
     std::cout << "\nlab02 submission complete with 8 out of 8 passes";
     std::cout << "\nlab03 start with partial success, errors on size and is_empty";
+    std::cout << "\nlab03 submission with passed 11 out of 11 tests";
     return 0;
 }
