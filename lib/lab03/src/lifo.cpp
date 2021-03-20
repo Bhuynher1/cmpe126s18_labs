@@ -49,9 +49,11 @@ namespace lab3{
     }
 
     void lifo::pop() {
-        if (index > 0) {
-            lifo_storage[index - 1] = "";
-            index--;
+        lab3::lifo *temp = new lab3::lifo();
+        for (int i = 0; i < lifo_storage.size() - 1; i++) {
+            temp -> lifo_storage.append(lifo_storage.operator[](i));
         }
+        lifo_storage = temp -> lifo_storage;
+        index--;
     }
 }
