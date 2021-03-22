@@ -238,11 +238,11 @@ test/gtest-1.7.0/clean: test/gtest-1.7.0/CMakeFiles/gtest.dir/clean
 # Target rules for target CMakeFiles/labs_main.dir
 
 # All Build rule for target.
-CMakeFiles/labs_main.dir/all: lab2_lib/CMakeFiles/lab2_lib.dir/all
-CMakeFiles/labs_main.dir/all: lab3_lib/CMakeFiles/lab3_lib.dir/all
-CMakeFiles/labs_main.dir/all: lab1_lib/CMakeFiles/lab1_lib.dir/all
 CMakeFiles/labs_main.dir/all: lab4_lib/CMakeFiles/lab4_lib.dir/all
 CMakeFiles/labs_main.dir/all: lab5_lib/CMakeFiles/lab5_lib.dir/all
+CMakeFiles/labs_main.dir/all: lab1_lib/CMakeFiles/lab1_lib.dir/all
+CMakeFiles/labs_main.dir/all: lab3_lib/CMakeFiles/lab3_lib.dir/all
+CMakeFiles/labs_main.dir/all: lab2_lib/CMakeFiles/lab2_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/labs_main.dir/build.make CMakeFiles/labs_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/labs_main.dir/build.make CMakeFiles/labs_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug/CMakeFiles" --progress-num=19,20 "Built target labs_main"
@@ -350,9 +350,9 @@ lab3_lib/CMakeFiles/lab3_lib.dir/clean:
 # Target rules for target lab4_lib/CMakeFiles/lab4_lib.dir
 
 # All Build rule for target.
-lab4_lib/CMakeFiles/lab4_lib.dir/all: lab2_lib/CMakeFiles/lab2_lib.dir/all
-lab4_lib/CMakeFiles/lab4_lib.dir/all: lab3_lib/CMakeFiles/lab3_lib.dir/all
 lab4_lib/CMakeFiles/lab4_lib.dir/all: lab1_lib/CMakeFiles/lab1_lib.dir/all
+lab4_lib/CMakeFiles/lab4_lib.dir/all: lab3_lib/CMakeFiles/lab3_lib.dir/all
+lab4_lib/CMakeFiles/lab4_lib.dir/all: lab2_lib/CMakeFiles/lab2_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f lab4_lib/CMakeFiles/lab4_lib.dir/build.make lab4_lib/CMakeFiles/lab4_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f lab4_lib/CMakeFiles/lab4_lib.dir/build.make lab4_lib/CMakeFiles/lab4_lib.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug/CMakeFiles" --progress-num=12,13 "Built target lab4_lib"
@@ -406,13 +406,13 @@ lab5_lib/CMakeFiles/lab5_lib.dir/clean:
 # Target rules for target test/CMakeFiles/runBasicTests.dir
 
 # All Build rule for target.
-test/CMakeFiles/runBasicTests.dir/all: lab2_lib/CMakeFiles/lab2_lib.dir/all
-test/CMakeFiles/runBasicTests.dir/all: lab3_lib/CMakeFiles/lab3_lib.dir/all
-test/CMakeFiles/runBasicTests.dir/all: lab1_lib/CMakeFiles/lab1_lib.dir/all
-test/CMakeFiles/runBasicTests.dir/all: test/gtest-1.7.0/CMakeFiles/gtest_main.dir/all
-test/CMakeFiles/runBasicTests.dir/all: test/gtest-1.7.0/CMakeFiles/gtest.dir/all
 test/CMakeFiles/runBasicTests.dir/all: lab4_lib/CMakeFiles/lab4_lib.dir/all
 test/CMakeFiles/runBasicTests.dir/all: lab5_lib/CMakeFiles/lab5_lib.dir/all
+test/CMakeFiles/runBasicTests.dir/all: lab1_lib/CMakeFiles/lab1_lib.dir/all
+test/CMakeFiles/runBasicTests.dir/all: lab3_lib/CMakeFiles/lab3_lib.dir/all
+test/CMakeFiles/runBasicTests.dir/all: lab2_lib/CMakeFiles/lab2_lib.dir/all
+test/CMakeFiles/runBasicTests.dir/all: test/gtest-1.7.0/CMakeFiles/gtest_main.dir/all
+test/CMakeFiles/runBasicTests.dir/all: test/gtest-1.7.0/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runBasicTests.dir/build.make test/CMakeFiles/runBasicTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runBasicTests.dir/build.make test/CMakeFiles/runBasicTests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug/CMakeFiles" --progress-num=21,22,23,24,25,26 "Built target runBasicTests"

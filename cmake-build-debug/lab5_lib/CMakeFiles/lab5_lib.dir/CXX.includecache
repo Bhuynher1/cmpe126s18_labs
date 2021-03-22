@@ -46,15 +46,3 @@ stack.h
 queue.h
 /Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/src/queue.h
 
-/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/src/linked_list.cpp
-linked_list.h
--
-
-/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/src/queue.cpp
-queue.h
-/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/src/queue.h
-
-/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/src/stack.cpp
-stack.h
-/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/src/stack.h
-

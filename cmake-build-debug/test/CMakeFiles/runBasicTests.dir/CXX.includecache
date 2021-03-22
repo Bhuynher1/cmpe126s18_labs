@@ -10,25 +10,33 @@
 string
 -
 
-../lib/lab02/inc/stringVector.h
+../lib/lab05/inc/fancy_calculator.h
+stack.h
+../lib/lab05/inc/stack.h
+queue.h
+../lib/lab05/inc/queue.h
+expressionstream.h
+../lib/lab05/inc/expressionstream.h
+iostream
+-
+
+../lib/lab05/inc/linked_list.h
+node.h
+../lib/lab05/inc/node.h
+iostream
+-
+
+../lib/lab05/inc/node.h
 string
 -
 
-../lib/lab03/inc/fifo.h
-stringVector.h
-../lib/lab03/inc/stringVector.h
+../lib/lab05/inc/queue.h
+linked_list.h
+../lib/lab05/inc/linked_list.h
 
-../lib/lab03/inc/lifo.h
-stringVector.h
-../lib/lab03/inc/stringVector.h
-
-../lib/lab04/inc/calculator.h
-lifo.h
-../lib/lab04/inc/lifo.h
-fifo.h
-../lib/lab04/inc/fifo.h
-expressionstream.h
-../lib/lab04/inc/expressionstream.h
+../lib/lab05/inc/stack.h
+linked_list.h
+../lib/lab05/inc/linked_list.h
 
 ../test/gtest-1.7.0/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
@@ -270,9 +278,15 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/lab04_tests.cpp
+/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/lab05_tests.cpp
 gtest/gtest.h
 /Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest/gtest.h
-calculator.h
-/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/calculator.h
+queue.h
+/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/queue.h
+stack.h
+/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/stack.h
+fancy_calculator.h
+/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/fancy_calculator.h
+algorithm
+-
 

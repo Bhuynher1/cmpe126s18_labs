@@ -51,7 +51,7 @@ namespace lab3{
     void lifo::pop() {
         lab3::lifo *temp = new lab3::lifo();
         for (int i = 0; i < lifo_storage.size() - 1; i++) {
-            temp -> lifo_storage.append(lifo_storage.operator[](i));
+            temp -> lifo_storage.append(lifo_storage[i]);
         }
         lifo_storage = temp -> lifo_storage;
         index--;

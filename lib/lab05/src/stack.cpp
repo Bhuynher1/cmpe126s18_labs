@@ -5,39 +5,44 @@ namespace lab5{
     }
 
     stack::stack(std::string &data) {
-
+        storage_structure.append(data);
     }
 
     stack::stack(const stack &original) {
-
+        storage_structure.operator= (original.storage_structure);
     }
 
     stack::~stack() {
-
+        storage_structure.~linked_list();
     }
 
     stack &stack::operator=(const stack &RHS) {
-        //return <#initializer#>;
+        const stack* temp = &RHS;
+        if (this == temp)
+            return *this;
+
+        storage_structure =  temp -> storage_structure;
+        return *this;
     }
 
     bool stack::isEmpty() const {
-        return false;
+        return storage_structure.isEmpty();
     }
 
     unsigned stack::stackSize() const {
-        return 0;
+        return storage_structure.listSize();
     }
 
     std::string stack::top() const {
-        //return std::__cxx11::string();
+        return storage_structure.get_value_at(storage_structure.listSize() - 1);
     }
 
     void stack::push(const std::string &data) {
-
+        storage_structure.append(data);
     }
 
     void stack::pop() {
-
+        storage_structure.remove(storage_structure.listSize() - 1);
     }
 
     std::ostream& operator<<(std::ostream &stream, stack &RHS) {
