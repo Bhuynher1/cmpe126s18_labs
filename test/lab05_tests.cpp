@@ -473,7 +473,6 @@ TEST_F(Lab05Fixture, fancy_calc_calculator_simple_test) {
 delete calculator_UT;
 input = "1 + 2 + 3 - 3 - 2 - 1";
 calculator_UT = new lab5::calculator(input);
-calculator_UT -> printinfo();
 
 EXPECT_EQ(0,calculator_UT->calculate());
 
@@ -514,7 +513,7 @@ input = "271 + 32 * ( 91 - 1 ) + 14 / 2";
 calculator_UT = new lab5::calculator(input);
 
 EXPECT_EQ(3158,calculator_UT->calculate());
-/*
+
 delete calculator_UT;
 input = "49 * ( 17 * ( 3 + 2 * ( 12 + 2 * ( 45 - 43 ) + 2 ) ) + 1 * ( 6 / 2 ) )";
 calculator_UT = new lab5::calculator(input);
@@ -525,7 +524,7 @@ delete calculator_UT;
 input = "( 1 + ( 1 + ( 1 + ( 1 + ( 1 + ( 1 + ( 1 + ( 1 + ( 1 + ( 1 + 1 ) + 1 ) + 1 ) + 1 ) + 1 ) + 1 ) + 1 ) + 1 ) + 1 ) + 1 )";
 calculator_UT = new lab5::calculator(input);
 
-EXPECT_EQ(20,calculator_UT->calculate());*/
+EXPECT_EQ(20,calculator_UT->calculate());
 }
 
 
