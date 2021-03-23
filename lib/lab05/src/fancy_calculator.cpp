@@ -1,6 +1,7 @@
 #include "fancy_calculator.h"
 #include "stack.h"
 #include "queue.h"
+#include "math.h"
 
 namespace lab5{
     // AUXILIARY FUNCTIONS

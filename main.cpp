@@ -16,5 +16,6 @@ int main() {
     std::cout << "\nlab03 submission with passed 11 out of 11 tests";
     std::cout << "\nlab04 broken with segmentation fault somewhere, lab5 nearly completed with tests on fancy calc";
     std::cout << "\nLab05 completed. lab04 not completed with segmentation due to previous files.";
+    std::cout << "\nLab05 fully complete, forgot to add math.h at the top.";
     return 0;
 }
