@@ -22,7 +22,6 @@ TEST(crash_test,crash_test_calculator_Test){
     delete calc_underTest;
     std::string input("1 + 2");
     calc_underTest=new lab4::calculator(input);
-//    calc_underTest -> printinfo();
 
     delete calc_underTest;
 }

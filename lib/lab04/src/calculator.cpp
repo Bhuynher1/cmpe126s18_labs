@@ -10,13 +10,7 @@ namespace lab4 {
 
     bool is_operator(std::string input_string);
 
-    int get_number(std::string input_string);
-
-    std::string get_operator(std::string input_string);
-
     int operator_priority(std::string operator_in);
-
-    void printinfo();
 
 
     // CALCULATOR FUNCTIONS
@@ -37,34 +31,32 @@ namespace lab4 {
             if (is_number(temp.top())){
                 postfix_expression.enqueue(temp.top());
             }
-            else if (is_operator(temp.top())){
-                while (!stack1.is_empty() && operator_priority(temp.top()) <= operator_priority(stack1.top())){
-                    postfix_expression.enqueue(stack1.top());
-                    stack1.pop();
-                }
-                while (stack1.is_empty()) {
-                    std::cout << "Operator stack is empty";
-                }
-
-                stack1.push(temp.top());
-            }
             else if (temp.top() == "("){
                 stack1.push(temp.top());
             }
             else if (temp.top() == ")"){
                 while (stack1.top() != "("){
-                    if (stack1.top() == "(") continue;
-                    else{
-                        postfix_expression.enqueue(stack1.top());
-                        stack1.pop();
-                    }
+                    postfix_expression.enqueue(stack1.top());
+                    stack1.pop();
                 }
-                stack1.pop();
+                if (stack1.top() == "(") {
+                    stack1.pop();
+                }
+            }
+            else if (is_operator(temp.top())){
+                while (!stack1.is_empty() && operator_priority(temp.top()) <= operator_priority(stack1.top())){
+                    postfix_expression.enqueue(stack1.top());
+                    stack1.pop();
+                }
+
+                stack1.push(temp.top());
             }
             temp.dequeue();
         }
+
         while (!stack1.is_empty()) {
-            if (stack1.top() == ")") stack1.pop();
+            if (stack1.top() == ")")
+                stack1.pop();
             else {
                 postfix_expression.enqueue(stack1.top());
                 stack1.pop();
@@ -91,64 +83,51 @@ namespace lab4 {
 
     int lab4::calculator::calculate() {
         lab3::lifo stack2;
+        lab3::fifo postfix = postfix_expression;
         int num1, num2;
 
-        while(!postfix_expression.is_empty())
-        {
-            if(is_number(postfix_expression.top()))
-            {
-                stack2.push(postfix_expression.top());
-            }
-            else {
-                num2 = get_number(stack2.top());
+        while(!postfix.is_empty()) {
+            if (is_operator(postfix.top())) {
+                num2 = std::stoi(stack2.top());
                 stack2.pop();
 
-                num1 = get_number(stack2.top());
+                num1 = std::stoi(stack2.top());
                 stack2.pop();
 
-                if(postfix_expression.top() == "*") {
-                    stack2.push(std::to_string(num1 * num2));
-                }
-                else if(postfix_expression.top() == "/") {
-                    stack2.push(std::to_string(num1 / num2));
-                }
-                else if(postfix_expression.top() == "+") {
-                    stack2.push(std::to_string(num1 + num2));
-                }
-                else if(postfix_expression.top() == "-") {
-                    stack2.push(std::to_string(num1 - num2));
-                }
+                int answer;
+                if(postfix.top() == "+")
+                    answer = num1 + num2;
+                else if(postfix.top() == "-")
+                    answer = num1 - num2;
+                else if(postfix.top() == "*")
+                    answer = num1 * num2;
+                else if(postfix.top() == "/")
+                    answer = num1 / num2;
+                stack2.push(std::to_string(answer));
             }
 
-            postfix_expression.dequeue();
+            else if (is_number(postfix.top()))
+                stack2.push(postfix.top());
+            postfix.dequeue();
         }
 
-        std::cout << "Answer: " << num1 << std::endl;
         return std::stoi(stack2.top());
     }
 
     std::ostream &operator<<(std::ostream &stream, calculator &RHS) {
-        std::cout << "Infix: " << RHS.infix_expression.top();
-        RHS.infix_expression.dequeue();
-
-        while(!RHS.infix_expression.is_empty()) {
+        stream << "Infix: ";
+        while(!RHS.infix_expression.is_empty()){
             stream << RHS.infix_expression.top();
+            if (RHS.infix_expression.size() != 1)
+                stream << ",";
             RHS.infix_expression.dequeue();
-            if (RHS.infix_expression.is_empty()) continue;
-            stream << ",";
-
         }
-
-        std::cout << "\n";
-
-        std::cout << "Postfix: " << RHS.postfix_expression.top();
-        RHS.postfix_expression.dequeue();
-
+        stream << "\nPostfix: ";
         while(!RHS.postfix_expression.is_empty()) {
-            std::cout << RHS.postfix_expression.top();
+            stream << RHS.postfix_expression.top();
+            if (RHS.postfix_expression.size() != 1)
+                stream << ",";
             RHS.postfix_expression.dequeue();
-            if (RHS.infix_expression.is_empty()) continue;
-            stream << ",";
         }
         return stream;
     }
@@ -156,11 +135,11 @@ namespace lab4 {
 
     // AUXILIARY FUNCTIONS
     bool is_number(std::string input_string) {
-        if (input_string >= "0" && input_string <= "9") {
+        for (int i = 0; i < input_string.length(); i++) {
+            if (isdigit(input_string[i]) == false)
+                return false;
             return true;
         }
-        else
-            return false;
     }
 
     bool is_operator(std::string input_string) {
@@ -177,14 +156,6 @@ namespace lab4 {
         }
     }
 
-    int get_number(std::string input_string) {
-        return std::stoi(input_string);
-    }
-
-    std::string get_operator(std::string input_string) {
-        return input_string;
-    }
-
     int operator_priority(std::string operator_in) {
         if (operator_in == "*"
         || operator_in == "/" ) {
@@ -197,28 +168,5 @@ namespace lab4 {
         else {
             return 0;
         }
-    }
-
-    void calculator::printinfo() {
-        lab3::fifo temp1 = infix_expression;
-        lab3::fifo temp2 = postfix_expression;
-
-        std::cout << "Infix: ";
-        while (!temp1.is_empty()) {
-            std::cout << temp1.top();
-            temp1.dequeue();
-            if (temp1.is_empty()){}
-            else std::cout << ",";
-        }
-        std::cout << std::endl;
-
-        std::cout << "Postfix: ";
-        while (!temp2.is_empty()) {
-            std::cout << temp2.top();
-            temp2.dequeue();
-            if (temp2.is_empty()){}
-            else std::cout << ",";
-        }
-        std::cout << std::endl;
     }
 }

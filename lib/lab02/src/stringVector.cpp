@@ -26,7 +26,7 @@ namespace lab2 {
         std::string *temp = new std::string[new_size];
         allocated_length = new_size;
         if (length > allocated_length) {
-         length = allocated_length;
+            length = allocated_length;
         }
         for (int i = 0; i < length; i++) {
             temp[i] = data[i];
@@ -36,7 +36,7 @@ namespace lab2 {
     }
 
     bool stringVector::empty() const{
-       return (length == 0);
+        return (length == 0);
     }
 
     void stringVector::append(std::string new_data)
