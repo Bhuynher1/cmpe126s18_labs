@@ -56,7 +56,6 @@ namespace lab5 {
         return *this;
     }
 
-
     bool linked_list::isEmpty() const {
         return (head == nullptr);
     }

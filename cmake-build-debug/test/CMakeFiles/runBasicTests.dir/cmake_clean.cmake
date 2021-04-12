@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/runBasicTests.dir/lab03_tests.cpp.o"
   "CMakeFiles/runBasicTests.dir/lab04_tests.cpp.o"
   "CMakeFiles/runBasicTests.dir/lab05_tests.cpp.o"
+  "CMakeFiles/runBasicTests.dir/lab06_tests.cpp.o"
   "runBasicTests"
   "runBasicTests.pdb"
 )
