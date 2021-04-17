@@ -104,6 +104,7 @@ labs_main: lab3_lib/liblab3_lib.a
 labs_main: lab4_lib/liblab4_lib.a
 labs_main: lab5_lib/liblab5_lib.a
 labs_main: lab6_lib/liblab6_lib.a
+labs_main: lab7_lib/liblab7_lib.a
 labs_main: lab3_lib/liblab3_lib.a
 labs_main: lab2_lib/liblab2_lib.a
 labs_main: lab1_lib/liblab1_lib.a

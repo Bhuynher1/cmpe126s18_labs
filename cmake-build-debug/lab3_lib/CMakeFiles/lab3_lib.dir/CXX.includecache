@@ -6,23 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../lib/lab02/inc/stringVector.h
-string
--
-
-../lib/lab03/inc/fifo.h
-stringVector.h
-../lib/lab03/inc/stringVector.h
-
-../lib/lab03/inc/lifo.h
-stringVector.h
-../lib/lab03/inc/stringVector.h
-
-/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab03/src/fifo.cpp
-fifo.h
-/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab03/src/fifo.h
-
-/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab03/src/lifo.cpp
-lifo.h
-/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab03/src/lifo.h
-

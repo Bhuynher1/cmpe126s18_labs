@@ -5,7 +5,7 @@
 		<Option title="cmpe126s18_labs"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\lab01\;CMake Files\lib\lab02\;CMake Files\lib\lab03\;CMake Files\lib\lab04\;CMake Files\lib\lab05\;CMake Files\lib\lab06\;CMake Files\test\;CMake Files\test\gtest-1.7.0\;CMake Files\test\gtest-1.7.0\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\lab01\;CMake Files\lib\lab02\;CMake Files\lib\lab03\;CMake Files\lib\lab04\;CMake Files\lib\lab05\;CMake Files\lib\lab06\;CMake Files\lib\lab07\;CMake Files\test\;CMake Files\test\gtest-1.7.0\;CMake Files\test\gtest-1.7.0\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug"/>
@@ -52,6 +52,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -80,6 +81,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -108,6 +110,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -136,6 +139,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -164,6 +168,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -192,6 +197,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -220,6 +226,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -248,6 +255,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -276,6 +284,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -304,6 +313,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -332,6 +342,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -360,6 +371,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -388,6 +400,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -416,6 +429,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -427,6 +441,64 @@
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/blakehuynh/Documents/SJSU\ SPRING\ 2021/CMPE\ 126/master/cmake-build-debug/lab6_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/blakehuynh/Documents/SJSU\ SPRING\ 2021/CMPE\ 126/master/cmake-build-debug/lab6_lib/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/blakehuynh/Documents/SJSU\ SPRING\ 2021/CMPE\ 126/master/cmake-build-debug/lab6_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab7_lib">
+				<Option output="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug/lab7_lib/liblab7_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug/lab7_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab01/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab02/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab03/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/blakehuynh/Documents/SJSU\ SPRING\ 2021/CMPE\ 126/master/cmake-build-debug/lab7_lib/Makefile&quot;  VERBOSE=1 lab7_lib"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/blakehuynh/Documents/SJSU\ SPRING\ 2021/CMPE\ 126/master/cmake-build-debug/lab7_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/blakehuynh/Documents/SJSU\ SPRING\ 2021/CMPE\ 126/master/cmake-build-debug/lab7_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/blakehuynh/Documents/SJSU\ SPRING\ 2021/CMPE\ 126/master/cmake-build-debug/lab7_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab7_lib/fast">
+				<Option output="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug/lab7_lib/liblab7_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug/lab7_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab01/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab02/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab03/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/blakehuynh/Documents/SJSU\ SPRING\ 2021/CMPE\ 126/master/cmake-build-debug/lab7_lib/Makefile&quot;  VERBOSE=1 lab7_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/blakehuynh/Documents/SJSU\ SPRING\ 2021/CMPE\ 126/master/cmake-build-debug/lab7_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/blakehuynh/Documents/SJSU\ SPRING\ 2021/CMPE\ 126/master/cmake-build-debug/lab7_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/blakehuynh/Documents/SJSU\ SPRING\ 2021/CMPE\ 126/master/cmake-build-debug/lab7_lib/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="runBasicTests">
@@ -444,6 +516,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0/include"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -474,6 +547,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0/include"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -504,6 +578,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0/include"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -534,6 +609,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0/include"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -564,6 +640,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0/include"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -594,6 +671,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0/include"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -676,6 +754,15 @@
 		<Unit filename="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/src/doubly_linked_list.cpp">
 			<Option target="lab6_lib"/>
 		</Unit>
+		<Unit filename="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc/node.h">
+			<Option target="lab7_lib"/>
+		</Unit>
+		<Unit filename="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc/tree.h">
+			<Option target="lab7_lib"/>
+		</Unit>
+		<Unit filename="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/src/tree.cpp">
+			<Option target="lab7_lib"/>
+		</Unit>
 		<Unit filename="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/main.cpp">
 			<Option target="labs_main"/>
 		</Unit>
@@ -703,6 +790,9 @@
 		<Unit filename="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/lab06_tests.cpp">
 			<Option target="runBasicTests"/>
 		</Unit>
+		<Unit filename="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/lab07_tests.cpp">
+			<Option target="runBasicTests"/>
+		</Unit>
 		<Unit filename="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
@@ -723,6 +813,9 @@
 		</Unit>
 		<Unit filename="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\lab06\"/>
+		</Unit>
+		<Unit filename="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\lab07\"/>
 		</Unit>
 		<Unit filename="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\test\"/>

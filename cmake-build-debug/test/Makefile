@@ -306,6 +306,33 @@ lab06_tests.cpp.s:
 	cd "/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runBasicTests.dir/build.make test/CMakeFiles/runBasicTests.dir/lab06_tests.cpp.s
 .PHONY : lab06_tests.cpp.s
 
+lab07_tests.o: lab07_tests.cpp.o
+
+.PHONY : lab07_tests.o
+
+# target to build an object file
+lab07_tests.cpp.o:
+	cd "/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runBasicTests.dir/build.make test/CMakeFiles/runBasicTests.dir/lab07_tests.cpp.o
+.PHONY : lab07_tests.cpp.o
+
+lab07_tests.i: lab07_tests.cpp.i
+
+.PHONY : lab07_tests.i
+
+# target to preprocess a source file
+lab07_tests.cpp.i:
+	cd "/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runBasicTests.dir/build.make test/CMakeFiles/runBasicTests.dir/lab07_tests.cpp.i
+.PHONY : lab07_tests.cpp.i
+
+lab07_tests.s: lab07_tests.cpp.s
+
+.PHONY : lab07_tests.s
+
+# target to generate assembly for a file
+lab07_tests.cpp.s:
+	cd "/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runBasicTests.dir/build.make test/CMakeFiles/runBasicTests.dir/lab07_tests.cpp.s
+.PHONY : lab07_tests.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -333,6 +360,9 @@ help:
 	@echo "... lab06_tests.o"
 	@echo "... lab06_tests.i"
 	@echo "... lab06_tests.s"
+	@echo "... lab07_tests.o"
+	@echo "... lab07_tests.i"
+	@echo "... lab07_tests.s"
 .PHONY : help
 
 

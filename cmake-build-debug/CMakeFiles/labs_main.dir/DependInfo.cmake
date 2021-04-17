@@ -22,6 +22,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../lib/lab04/inc"
   "../lib/lab05/inc"
   "../lib/lab06/inc"
+  "../lib/lab07/inc"
   )
 
 # Targets to which this target links.
@@ -32,6 +33,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug/lab4_lib/CMakeFiles/lab4_lib.dir/DependInfo.cmake"
   "/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug/lab5_lib/CMakeFiles/lab5_lib.dir/DependInfo.cmake"
   "/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug/lab6_lib/CMakeFiles/lab6_lib.dir/DependInfo.cmake"
+  "/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug/lab7_lib/CMakeFiles/lab7_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

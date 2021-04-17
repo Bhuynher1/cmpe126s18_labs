@@ -22,6 +22,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../lib/lab04/inc"
   "../lib/lab05/inc"
   "../lib/lab06/inc"
+  "../lib/lab07/inc"
   "../test/gtest-1.7.0/include"
   "../test/gtest-1.7.0"
   )

@@ -221,6 +221,19 @@ lab6_lib/fast:
 .PHONY : lab6_lib/fast
 
 #=============================================================================
+# Target rules for targets named lab7_lib
+
+# Build rule for target.
+lab7_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab7_lib
+.PHONY : lab7_lib
+
+# fast build rule for target.
+lab7_lib/fast:
+	$(MAKE) $(MAKESILENT) -f lab7_lib/CMakeFiles/lab7_lib.dir/build.make lab7_lib/CMakeFiles/lab7_lib.dir/build
+.PHONY : lab7_lib/fast
+
+#=============================================================================
 # Target rules for targets named runBasicTests
 
 # Build rule for target.
@@ -302,6 +315,7 @@ help:
 	@echo "... lab4_lib"
 	@echo "... lab5_lib"
 	@echo "... lab6_lib"
+	@echo "... lab7_lib"
 	@echo "... labs_main"
 	@echo "... runBasicTests"
 	@echo "... main.o"

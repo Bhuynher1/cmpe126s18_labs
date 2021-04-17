@@ -5,7 +5,7 @@
 		<Option title="gtest"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\lab01\;CMake Files\lib\lab02\;CMake Files\lib\lab03\;CMake Files\lib\lab04\;CMake Files\lib\lab05\;CMake Files\lib\lab06\;CMake Files\test\;CMake Files\test\gtest-1.7.0\;CMake Files\test\gtest-1.7.0\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\lab01\;CMake Files\lib\lab02\;CMake Files\lib\lab03\;CMake Files\lib\lab04\;CMake Files\lib\lab05\;CMake Files\lib\lab06\;CMake Files\lib\lab07\;CMake Files\test\;CMake Files\test\gtest-1.7.0\;CMake Files\test\gtest-1.7.0\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/cmake-build-debug/test/gtest-1.7.0"/>
@@ -32,6 +32,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0/include"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -62,6 +63,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0/include"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -92,6 +94,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0/include"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -122,6 +125,7 @@
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab04/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab05/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/inc"/>
+					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/inc"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0/include"/>
 					<Add directory="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/gtest-1.7.0"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -164,6 +168,9 @@
 		</Unit>
 		<Unit filename="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab06/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\lab06\"/>
+		</Unit>
+		<Unit filename="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab07/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\lab07\"/>
 		</Unit>
 		<Unit filename="/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\test\"/>

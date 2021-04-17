@@ -6,11 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../lib/lab01/inc/expressionstream.h
-string
--
-
-/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab01/src/expressionstream.cpp
-expressionstream.h
-/Users/blakehuynh/Documents/SJSU SPRING 2021/CMPE 126/master/lib/lab01/src/expressionstream.h
-
