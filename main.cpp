@@ -19,5 +19,6 @@ int main() {
     std::cout << "\nLab05 fully complete, forgot to add math.h at the top.";
     std::cout << "\nLab06 Complete and passing all 11 tests but with changing the size function to a constant.";
     std::cout << "\nLab06 complete but isnt passing a plus or equal test for some reason final submission.";
+    std::cout << "\nLab07 Complete but without bonus functions";
     return 0;
 }

@@ -207,6 +207,7 @@ TEST_F(Lab07Fixture, values_above){
 
     compare = std::vector<int>({7,8,9,10,10,11,12,13,13,13,14,15,15,16,17,18,19,19,20,22});
     EXPECT_EQ(built_tree->values_above(6), compare);
+
 }
 
 TEST_F(Lab07Fixture, equals_operator){
