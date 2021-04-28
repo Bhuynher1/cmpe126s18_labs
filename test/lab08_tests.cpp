@@ -205,12 +205,10 @@ class Lab08SortsFixture : public ::testing::Test {
 protected:
     virtual void SetUp() {
         test_numbers=std::vector<int>({12,8,14,15,18,16,17,19,22,20,4,10,9,13,11,5,7,6,2,1,3});
-        test_number1=std::vector<int>({12,8,14,15,18,16,17});
-        test_number2=std::vector<int>({19,22,20,4,10,9,13,11,5,7,6,2,1,3});
     }
 
 public:
-    std::vector <int> test_numbers, test_number1, test_number2;
+    std::vector <int> test_numbers;
 
 };
 
