@@ -20,5 +20,6 @@ int main() {
     std::cout << "\nLab06 Complete and passing all 11 tests but with changing the size function to a constant.";
     std::cout << "\nLab06 complete but isnt passing a plus or equal test for some reason final submission.";
     std::cout << "\nLab07 Complete but without bonus functions";
+    std::cout << "\nlab08 submission, cannot pass any test without segmentation abort and cant find problem.";
     return 0;
 }

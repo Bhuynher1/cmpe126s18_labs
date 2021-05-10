@@ -3,6 +3,7 @@
 #include "../lib/lab08/src/sorts.cpp"
 #include "../lib/lab06/inc/doubly_linked_list.h"
 #include <random>
+#include <algorithm>
 
 std::string gen_random();
 
@@ -57,6 +58,7 @@ TEST_F(Lab08Fixture, insertTest) {
         EXPECT_FALSE(tableq.insert(string_values[i], values[i]));
         EXPECT_FALSE(tabled.insert(string_values[i], values[i]));
     }
+
 }
 
 TEST_F(Lab08Fixture, inTableTest) {
